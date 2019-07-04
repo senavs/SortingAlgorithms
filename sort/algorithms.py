@@ -1,4 +1,4 @@
-from ..utils.functions import swap
+from ..utils.functions import swap, partition
 
 def selection(array, inplace=True):
     if not inplace:
@@ -42,25 +42,15 @@ def insertion(array, inplace=True):
 
 def quicksort(array, inplace=True):
         
-    def sort(start, end):   
+    def sort(array, start, end):   
         if start < end:
-            index = partition(start, end)
-            sort(start, index - 1)
-            sort(index + 1, end)
+            index = partition(array, start, end)
+            sort(array, start, index - 1)
+            sort(array, index + 1, end)
         return
-
-    def partition(start, end):
-        pivot_index = start
-        pivot_value = array[end]
-        for i in range(start, end):
-            if array[i] < pivot_value:
-                swap(array, i, pivot_index)
-                pivot_index += 1
-        swap(array, pivot_index, end)
-        return pivot_index
 
     if not inplace:
         array = array.copy()
 
-    sort(0, len(array)-1)
+    sort(array, 0, len(array)-1)
     return array
