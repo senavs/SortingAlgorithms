@@ -1,1 +1,1 @@
-from .sort.algorithms import selection, bubble, insertion
+from .sort.algorithms import selection, bubble, insertion, quicksort
