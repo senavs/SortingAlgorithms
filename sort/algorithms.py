@@ -39,3 +39,28 @@ def insertion(array, inplace=True):
             else:
                 break
     return array
+
+def quicksort(array, inplace=True):
+        
+    def sort(start, end):   
+        if start < end:
+            index = partition(start, end)
+            sort(start, index - 1)
+            sort(index + 1, end)
+        return
+
+    def partition(start, end):
+        pivot_index = start
+        pivot_value = array[end]
+        for i in range(start, end):
+            if array[i] < pivot_value:
+                swap(array, i, pivot_index)
+                pivot_index += 1
+        swap(array, pivot_index, end)
+        return pivot_index
+
+    if not inplace:
+        array = array.copy()
+
+    sort(0, len(array)-1)
+    return array
