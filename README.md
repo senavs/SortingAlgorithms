@@ -1,5 +1,9 @@
 # SortingAlgorithms
 
+<p align="center">
+  <img src="https://cdn-images-1.medium.com/max/1600/1*Je8WwRHArkBTLvuhModZDA.png" width=250>
+</p>
+
 ## About the project
 &nbsp; **Hello World!**. Welcome to my **Sorting Algorithms** GitHub Portfolio. This project it's just me **reinventing the wheel**. 
 In others words, The most popular sorting algorithm i'll try to implement using python from scratch.  
