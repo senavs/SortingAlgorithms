@@ -36,4 +36,11 @@
     <td>O(n<sup>2</sup>)</td>
     <td>O(1)</td>
   </tr>
+  <tr align="center">
+    <td>Quicksort</td>
+    <td>Ω(n log n)</td>
+    <td>Θ(n log n)</td>
+    <td>O(n<sup>2</sup>)</td>
+    <td>O(log(n))</td>
+  </tr>
 </table>
