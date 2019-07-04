@@ -1,6 +1,10 @@
 # SortingAlgorithms
 
 ## About the project
+&nbsp; **Hello World!**. Welcome to my **Sorting Algorithms** GitHub Portfolio. This project it's just me **reinventing the wheel**. 
+In others words, The most popular sorting algorithm i'll try to implement using python from scratch.  
+&nbsp; There will be algorithms that I might forget to implement, but you can request them and I'll be coding. You can download, test or, even, improve it. Fell free!  
+&nbsp; That is it! :D
 
 ## Complexy Sort Algorithms
 <table>
